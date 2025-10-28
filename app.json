@@ -1,0 +1,29 @@
+{
+  "name": "Docker Android Emulator",
+  "description": "Android Emulator running on Back4app",
+  "keywords": [
+    "android",
+    "emulator",
+    "docker",
+    "testing"
+  ],
+  "website": "https://your-app-name.back4app.io",
+  "repository": "https://github.com/your-username/docker-android-back4app",
+  "stack": "container",
+  "env": {
+    "ANDROID_EMULATOR_OPTS": {
+      "value": "-no-accel -gpu swiftshader -no-audio",
+      "description": "Emulator options for non-KVM environment"
+    },
+    "DISPLAY": {
+      "value": ":0",
+      "description": "X11 display"
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1,
+      "size": "standard-1x"
+    }
+  }
+}
