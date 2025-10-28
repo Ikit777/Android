@@ -1,0 +1,14 @@
+build:
+  docker:
+    web: Dockerfile
+  config:
+    ENV: production
+    NODE_ENV: production
+
+run:
+  web: /root/start-emulator.sh
+
+ports:
+  - 6080
+  - 5554
+  - 5555
