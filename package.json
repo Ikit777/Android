@@ -1,0 +1,16 @@
+{
+  "name": "docker-android-back4app",
+  "version": "1.0.0",
+  "description": "Android Emulator on Back4app",
+  "scripts": {
+    "start": "docker-compose up",
+    "build": "docker-compose build",
+    "dev": "docker-compose up --build"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
